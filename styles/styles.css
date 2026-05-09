@@ -1,0 +1,95 @@
+@import url("./global.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: var(--font-family-primary);
+}
+
+/*---------HEADER----------*/
+
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding:46px 0px;
+   border-bottom: 1px solid var(--color-primary);
+   background-color: var(--color-secondary);
+
+}
+
+.container-nav-header {
+   display: flex;
+   align-items: center;
+   gap: 139px;
+}
+
+.navigation-header ul {
+   display: flex;
+   list-style: none;
+   align-items: center;
+   gap: 30px;
+}
+
+.navigation-header a {
+   text-decoration: none;
+   color:var(--color-neutral-white);
+}
+
+.menu-active {
+   color: var(--color-primary)
+}
+
+.btn-header {
+   background-color: var(--color-primary);
+   color: var(--color-neutral-white);
+   padding: 10px 20px;
+   border-radius: 8px;
+   text-decoration: none;
+}
+
+/*---------main----------*/
+
+main{
+
+display: flex;
+justify-content:center;
+align-items:center;
+gap: 50px;
+padding: 100px 0px;
+background-color: var(--color-secondary);
+
+}
+
+.main-content {
+   display: flex;
+   flex-direction: column;
+   gap: 25px;
+   width: 497px;
+}
+
+.main-content h1 {
+   font-size: var(--font-size-h1);
+   color: var(--color-neutral-white);
+}
+
+.main-content h1 span{
+   color: var(--color-primary);
+}
+
+.main-content p {
+    color: var(--color-neutral-white);
+
+
+}
+.main-image {
+    width: 574px;
+    height: 407.65px;
+}
+
+
