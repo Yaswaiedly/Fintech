@@ -14,26 +14,25 @@ body {
 /*---------HEADER----------*/
 
 header {
+   border-bottom: 1px solid var(--color-primary);
+   background-color: var(--color-secondary);
+}
+
+.container-header {
+
+   max-width: 1280px;
+   margin: 0 auto;
+   padding: 46px 40px;
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding:46px 0px;
-   border-bottom: 1px solid var(--color-primary);
-   background-color: var(--color-secondary);
-
-}
-
-.container-nav-header {
-   display: flex;
-   align-items: center;
-   gap: 139px;
 }
 
 .navigation-header ul {
    display: flex;
    list-style: none;
    align-items: center;
-   gap: 30px;
+   gap: 45px;
 }
 
 .navigation-header a {
@@ -87,7 +86,7 @@ background-color: var(--color-secondary);
 
 
 }
-.main-image {
+.main-image img {
     width: 574px;
     height: 407.65px;
 }
