@@ -147,3 +147,70 @@ main {
    max-width: 602px;
    
 }
+
+.btn-primary {
+    background-color: transparent; /* Remove o fundo */
+    color: var(--color-neutral-white); /* Deixa o texto com a cor principal (roxo) */
+    border: 1px solid var(--color-primary); /* Adiciona o contorno */
+    padding: 10px 20px; /* Dá o espaçamento interno do botão */
+    border-radius: 8px; /* Arredonda as pontas */
+    text-decoration: none; /* Remove o sublinhado */
+    display: inline-block; /* Fundamental para o botão respeitar o padding e a borda */
+    font-weight: 600; /* Deixa o texto um pouco mais encorpado */
+}
+
+.btn-primary:hover {
+    background-color: var(--color-neutral-white); /* Preenche o fundo */
+    color: var(--color-primary); /* Muda o texto para branco */
+}
+/*------details---------->*/
+
+.details-service {
+
+display: flex;
+flex-direction: column;
+background-color: var(--color-secondary);
+justify-content: center;
+align-items: center;
+padding: 60px;
+gap: 24px;
+
+}
+
+.service-details {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 703px; /* Limita a largura total */
+    width: 100%;
+    
+}
+
+.service-details h2{
+   font-size: var(--font-size-h2);
+   color: var(--color-neutral-white);
+   margin-bottom: 16px;
+
+}
+
+.service-details span{
+   align-items: center;
+   font-size: var(--font-size-h2);
+   color: var(--color-primary);
+}
+
+.service-details p {
+   font-size: var(--font-size-body);
+   color: var(--color-neutral-white);
+   max-width: 730px;
+   margin-bottom: 24px;
+}
+
+.service-details img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+
+}
