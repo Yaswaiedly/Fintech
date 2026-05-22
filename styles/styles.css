@@ -113,7 +113,7 @@ main {
    width: 100%;
    max-width: 1280px;
    box-sizing: border-box;
-   
+
 
 
 }
@@ -143,59 +143,71 @@ main {
 
 .services-content p {
    font-size: var (--font-size-body);
-   color:var(--color-secondary);
+   color: var(--color-secondary);
    max-width: 602px;
-   
+
 }
 
 .btn-primary {
-    background-color: transparent; /* Remove o fundo */
-    color: var(--color-neutral-white); /* Deixa o texto com a cor principal (roxo) */
-    border: 1px solid var(--color-primary); /* Adiciona o contorno */
-    padding: 10px 20px; /* Dá o espaçamento interno do botão */
-    border-radius: 8px; /* Arredonda as pontas */
-    text-decoration: none; /* Remove o sublinhado */
-    display: inline-block; /* Fundamental para o botão respeitar o padding e a borda */
-    font-weight: 600; /* Deixa o texto um pouco mais encorpado */
+   background-color: transparent;
+   /* Remove o fundo */
+   color: var(--color-neutral-white);
+   /* Deixa o texto com a cor principal (roxo) */
+   border: 1px solid var(--color-primary);
+   /* Adiciona o contorno */
+   padding: 10px 20px;
+   /* Dá o espaçamento interno do botão */
+   border-radius: 8px;
+   /* Arredonda as pontas */
+   text-decoration: none;
+   /* Remove o sublinhado */
+   display: inline-block;
+   /* Fundamental para o botão respeitar o padding e a borda */
+   font-weight: 600;
+   /* Deixa o texto um pouco mais encorpado */
 }
 
 .btn-primary:hover {
-    background-color: var(--color-neutral-white); /* Preenche o fundo */
-    color: var(--color-primary); /* Muda o texto para branco */
+   background-color: var(--color-neutral-white);
+   /* Preenche o fundo */
+   color: var(--color-primary);
+   /* Muda o texto para branco */
 }
+
 /*------details---------->*/
 
 .details-service {
 
-display: flex;
-flex-direction: column;
-background-color: var(--color-secondary);
-justify-content: center;
-align-items: center;
-padding: 60px;
-gap: 24px;
+   display: flex;
+   flex-direction: column;
+   background-color: var(--color-secondary);
+   justify-content: center;
+   align-items: center;
+   padding: 60px;
+   gap: 24px;
 
 }
 
 .service-details {
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    max-width: 703px; /* Limita a largura total */
-    width: 100%;
-    
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   max-width: 703px;
+   /* Limita a largura total */
+   width: 100%;
+
 }
 
-.service-details h2{
+.service-details h2 {
    font-size: var(--font-size-h2);
    color: var(--color-neutral-white);
    margin-bottom: 16px;
 
 }
 
-.service-details span{
+.service-details span {
    align-items: center;
    font-size: var(--font-size-h2);
    color: var(--color-primary);
@@ -209,8 +221,130 @@ gap: 24px;
 }
 
 .service-details img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 16px;
+   max-width: 100%;
+   height: auto;
+   border-radius: 16px;
 
+}
+
+.service-details img {
+    transition: transform 0.2s ease;
+
+}
+
+.service-details img:hover { 
+    transform: scale(1.01);
+}
+
+/*----------FOOTER--------*/
+
+/* ======================== */
+/* ESTILOS DO FOOTER        */
+/* ======================== */
+
+footer {
+   background-color: var(--color-secondary);
+   color: var(--color-neutral-white);
+   font-family: var(--font-family-primary);
+
+   /* Flexbox para colocar as colunas lado a lado */
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   flex-wrap: wrap;
+   /* Permite que quebre a linha em telas menores */
+
+   padding: 60px 8%;
+   /* Espaçamento interno (respiro) */
+   gap: 40px;
+   /* Distância entre as colunas */
+
+   /* Aquela linha fina que separa o conteúdo de cima do footer */
+   border-top: 1px solid var(--color-neutral-white);
+}
+
+/* Ajuste dos títulos dentro do footer */
+footer h3 {
+   font-size: var(--font-size-button);
+   font-weight: var(--font-weight-button);
+   margin-bottom: 24px;
+   line-height: 1.4;
+}
+
+/* Retira as bolinhas da lista e aplica flex para alinhar os links */
+footer ul {
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   /* Espaço entre os links */
+}
+
+/* Estilo dos links do footer */
+footer ul li a {
+   color: var(--color-neutral-white);
+   text-decoration: none;
+   font-size: var(--font-size-caption);
+   opacity: 0.8;
+   /* Deixa o texto levemente "apagado" para dar hierarquia visual */
+   transition: opacity 0.3s ease;
+}
+
+/* Efeito ao passar o mouse: o link fica 100% branco */
+footer ul li a:hover {
+   opacity: 1;
+}
+
+/* ======================== */
+/* ÁREA DO INPUT (NEWSLETTER) */
+/* ======================== */
+
+.footer-novidade {
+   max-width: 280px;
+}
+
+.input-group {
+   display: flex;
+   align-items: center;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+   padding-bottom: 12px;
+   margin-top: 24px;
+}
+
+/* A caixa de digitar o texto */
+.input-group input {
+   background: transparent;
+   border: none;
+   color: var(--color-neutral-white);
+   font-family: var(--font-family-primary);
+   font-size: var(--font-size-caption);
+   flex: 1;
+   /* Faz o input empurrar o botão para o canto direito */
+}
+
+/* Cor do texto "Your email address" */
+.input-group input::placeholder {
+   color: rgba(255, 255, 255, 0.6);
+}
+
+/* O botão redondinho roxo */
+.input-group button {
+   background-color: var(--color-primary);
+   color: var(--color-neutral-white);
+   width: 36px;
+   height: 36px;
+   border-radius: 50%;
+   /* Transforma o quadrado num círculo perfeito */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   transition: transform 0.3s ease;
+   /* Animação suave */
+}
+
+/* Efeito ao passar o mouse no botão */
+.input-group button:hover {
+   transform: scale(1.08);
+   /* leve crescida no botão */
 }
