@@ -12,10 +12,10 @@ Sobre o Projeto
 Construí esse projeto para colocar em prática conceitos de Front-end e UX/UI Design que venho estudando. A ideia central foi criar uma interface que transmita segurança e confiabilidade, valores que fazem toda a diferença no contexto de uma Fintech sem abrir mão de uma navegação limpa e intuitiva.
 
 Utilizados:
-HTML5 — estrutura semântica e acessível
-CSS3 — variáveis no :root, Flexbox e transições suaves
-Figma — referência de design reproduzida com fidelidade
+HTML5 - estrutura semântica e acessível
+CSS3 - variáveis no :root, Flexbox e transições suaves
+Figma - referência de design reproduzida com fidelidade
 
-Micro-interações — usei :hover com transform: scale e variações de opacidade para dar feedback visual sem exagerar
-Acessibilidade — no campo de newsletter do rodapé, calibrei o contraste do placeholder para orientar o usuário sem poluir a tela
-Hierarquia visual — espaçamentos com gap e padding aliados à tipografia para conduzir o olhar pelas seções de conversão
+Micro-interações - usei :hover com transform: scale e variações de opacidade para dar feedback visual sem exagerar
+Acessibilidade - no campo de newsletter do rodapé, calibrei o contraste do placeholder para orientar o usuário sem poluir a tela
+Hierarquia visual - espaçamentos com gap e padding aliados à tipografia para conduzir o olhar pelas seções de conversão
